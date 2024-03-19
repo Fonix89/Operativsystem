@@ -1,0 +1,7 @@
+{
+    "C_Cpp.default.intelliSenseMode": "",
+    "files.associations": {
+        "wait.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
