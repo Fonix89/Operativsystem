@@ -23,7 +23,7 @@ void *lesInn(void *arg) {
     return NULL;
 }
 
-void* lesUt(void *arg) {
+void *lesUt(void *arg) {
     FILE *fil = fopen("ut.txt", "r");
     if (fil == NULL) {
         printf("Kunne ikke åpne filen\n");
