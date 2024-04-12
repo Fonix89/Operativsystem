@@ -76,22 +76,22 @@ int main(int arch, char *argv[]) {
 
     if(pthread_create(&tråd_inn, NULL, &lesInn, NULL) != 0) {
         printf("Kunne ikke lage tråd for lesInn\n");
-        return 1;
+        return 3;
     }
 
     if(pthread_create(&tråd_ut, NULL, &lesUt, NULL) != 0) {
         printf("Kunne ikke lage tråd for lesUt\n");
-        return 2;
+        return 4;
     }
 
     if(pthread_join(tråd_inn, (void**) &ret1) != 0) {
         printf("Kunne ikke hente tråd 1\n");
-        return 3;
+        return 5;
     }
 
     if(pthread_join(tråd_ut, (void**) &ret2) != 0) {
         printf("Kunne ikke hente tråd 2\n");
-        return 4;
+        return 6;
     }
 
     printf("Balansen er: %d\n", balanse);
